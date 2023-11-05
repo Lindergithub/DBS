@@ -43,6 +43,15 @@ app.get("/readuser", (req, res) => {
   });
 });
 
+app.get("/showuser", (req, res) => {
+  db.query("SELECT * FROM user", (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(result);
+    }
+  });
+});
 app.listen(3001, () => {
     console.log("hi there, it's working on port 3001");
 });

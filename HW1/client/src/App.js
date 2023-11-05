@@ -8,37 +8,31 @@ function App() {
   const[gender, setGender] = useState('');
   const[phone, setPhone] = useState(0);
   const[email, setEmail] = useState('');
-
   const[userlist, setUserlist] = useState([]);
-
-  
   const addUser =() => {
     Axios.post("http://localhost:3001/createuser",{
       Name: name,
       Gender: gender,
       Phone: phone,
-      Email: email
+      Email: email,
     }).then((response) => {
       setUserlist([
         ...userlist,
         {
-          user_id:response.data.user_id,
           user_name: name,
           user_gender: gender,
           user_phone: phone,
           user_email: email,
         },
       ]);
-      console.log(response)
     });
+    
   };
-
-
-
   const getUser =() => {
     Axios.get("http://localhost:3001/readuser").then((response) => {
       setUserlist(response.data);
     });
+    console.log(userlist)
   };
 
 
