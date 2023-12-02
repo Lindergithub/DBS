@@ -1,0 +1,49 @@
+
+input {
+  width: 300px;
+  height: 20px;
+  font-size: 20px;
+  margin: 5px;
+}
+button {
+  width: 100px;
+  height: 20px;
+} 
+button:hover {
+  cursor: pointer;
+}
+
+.classcontact table{
+  border-collapse: collapse;
+  border-spacing: 5px;
+  border: 3px solid black;
+
+}
+
+.classcontact thead{
+  background-color: aqua;
+  margin: 10px;
+  padding: 5px;
+}
+.classcontact th{
+  border-bottom: 3px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+
+.classcontact tbody{
+  background-color: rgb(189, 159, 209);
+  margin: 10px;
+  padding: 5px;
+}
+.classcontact td{
+  border-bottom: 3px solid black;
+  margin: 10px;
+  padding:5px;
+}
+
+.classcontact td button {
+  width: 100px;
+  height: 44px;
+  color: blue;
+} 

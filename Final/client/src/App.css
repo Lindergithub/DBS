@@ -1,0 +1,60 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+
+}
+
+ button {
+  width: 200px;
+  height: 46px;
+  margin-top: 15px;
+} 
+
+ button:hover {
+  cursor: pointer;
+}
+
+.classcontact {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  width: 100%;
+  background-color: aqua;
+}
+
+.div {
+  width: 1000px;
+  height: auto;
+  border: 1px solid black;
+  margin: 20px;
+  display: flex;
+  padding: 10px;
+  font-family: 'Pacifico', 'Dancing Script';
+  white-space: nowrap;
+  background-color: aqua;
+}
+
+.employee h3 {
+  margin: 20px;
+}
+
