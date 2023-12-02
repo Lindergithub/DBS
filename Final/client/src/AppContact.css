@@ -1,17 +1,4 @@
 
-input {
-  width: 300px;
-  height: 20px;
-  font-size: 20px;
-  margin: 5px;
-}
-button {
-  width: 100px;
-  height: 20px;
-} 
-button:hover {
-  cursor: pointer;
-}
 
 .classcontact table{
   border-collapse: collapse;

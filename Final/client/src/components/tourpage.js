@@ -28,7 +28,7 @@ function TourPage() {
   };
 
   return (
-    <div>
+    <div className='classtour'>
       <h1>Tours</h1>
       <button onClick={() => {
             Axios.post('http://localhost:3001/api/tours', {
