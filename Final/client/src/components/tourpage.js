@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Axios from 'axios';
 
-function Tour() {
+function TourPage() {
     const [tour, setTours] = React.useState([]);
     const [selectedTour, setSelectedTour] = React.useState(null);
     const [tourName, setTourName] = React.useState('');
@@ -202,4 +202,4 @@ function Tour() {
   );
 }
 
-export default Tour;
+export default TourPage;

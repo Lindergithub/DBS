@@ -2,8 +2,8 @@
 const express = require("express");
 const mysql = require("mysql");
 const contactRouter = require("./routes/routes_contact");
-const tourRouter = require("./routes/tour");
-const travelerRouter = require("./routes/traveler");
+const tourRouter = require("./routes/routes_tour");
+const travelerRouter = require("./routes/routes_traveler");
 const cors = require("cors");
 
 const app = express();

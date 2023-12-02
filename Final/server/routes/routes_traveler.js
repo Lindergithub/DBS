@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const traveler = require("../models/traveler");
+const traveler = require("../models/models_traveler");
 
 function travelerRoutes(connection) {
     router.get("/", async (req, res) => {
