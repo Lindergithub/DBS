@@ -1,0 +1,91 @@
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -1000px; /* Start off-screen */
+    transition: left 0.3s ease;
+    background-color: #4984b2;
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .toggle-button {
+    background-color: rgb(33, 16, 130);
+    color: #fff;
+    font-family: 'Comic Sans MS', sans-serif;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .toggle-button:hover {
+    background-color: rgb(15, 0, 63);
+  }
+
+  ul {
+    /*list-style-type: none;  隱藏點狀符號 */
+    padding: 0; /* 移除預設的內邊距 */
+  }
+  
+  li {
+    /*border: 10px solid #ffffff;
+    background-color: rgb(255, 255, 255);*/
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  Link:hover {
+    color: rgb(255, 255, 255); /* 連結的懸停時顏色 */
+  }
+  .element-link {
+    display: flex;
+    flex-direction: column;
+   /* align-items: center;*/
+    justify-content: center;
+    
+    text-decoration: none;/* 移除底線 */
+    font-family: 'Comic Sans MS', sans-serif; /* 'Arial' 是首選字體，sans-serif 是通用字體類型 */
+    color: #ffffff; /* 你想要的顏色 */
+    border: 1px solid #4984b2; /* 框框的樣式，可以根據需要調整寬度和顏色 */
+    padding: 8px; /* 可以根據需要調整內邊距 */
+    border-radius: 0px; /* 可以根據需要調整圓角 */
+    background-color: #4984b2; /* 你想要的填充色 */
+ 
+  }
+ 
+  .element-link:hover {
+    text-decoration: none;/* 移除底線 */
+    color: rgb(255, 255, 255); /* 你想要的懸停時的文字顏色 */
+    border-color: rgb(173, 173, 173); /* 懸停時的框框顏色，可以根據需要調整 */
+    background-color: rgb(173, 173, 173); /* 懸停時的填充色 */
+
+  }
+  /*.sidebounder {
+    color: #ffffff; /* 你想要的顏色 */
+  /*  border: 1px solid #4984b2; /* 框框的樣式，可以根據需要調整寬度和顏色 */
+  /* padding: 8px; /* 可以根據需要調整內邊距 */
+  /*  background-color: #4984b2; /* 你想要的填充色 */
+  /*}
+ 
+  .sidebounder:hover {
+    border-color: rgb(173, 173, 173); /* 懸停時的框框顏色，可以根據需要調整 */
+   /* background-color: rgb(173, 173, 173); /* 懸停時的填充色 */
+  /*}*/
+
+  .user-avatar {
+    margin-bottom: 20px; /* 根據需要調整底部間距 */
+  }
+  
+  .user-avatar img {
+    width: 50px; /* 根據需要調整圖片寬度 */
+    border-radius: 50%; /* 製作圓形圖片 */
+  }

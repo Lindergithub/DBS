@@ -1,0 +1,56 @@
+.creat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .creat button {
+    width: 100px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+  }
+  
+  h1 {
+    margin-block-end: 0px;
+    margin-block-start: 0px
+  }
+  
+  .classtraveler {
+    display: flex;
+    flex-direction: column;
+  }
+  .classtraveler table {
+    border-collapse: separate;
+    border-spacing: 2px;
+  }
+  
+  .classtraveler thead {
+    background-color: rgb(137, 177, 248);
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .classtraveler th {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .classtraveler tbody {
+    background-color: rgb(159, 175, 209);
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .classtraveler td {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .classtraveler td button {
+    width: 100px;
+    height: 44px;
+    color: blue;
+  }
