@@ -77,6 +77,6 @@ app.delete("/delete/:userId", (req, res) => {
   });
 });
 
-app.listen(3001, () => {
-    console.log("hi there, it's working on port 3001");
+app.listen(2020, () => {
+    console.log("hi there, it's working on port 2020");
 });

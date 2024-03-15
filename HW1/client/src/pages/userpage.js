@@ -48,12 +48,13 @@ function Userpage() {
       alert("電話請輸入數字");
       return;
     }
-    Axios.post("http://localhost:3001/createuser", {
+    Axios.post("http://localhost:8001/createuser", {
       sendtobackname: frontinputname,
       sendtobackgender: frontinputgender,
       sendtobackphone: frontinputphone,
       sendtobackemail: frontinputemail,
     }).then((response) => {
+      
       setUserlist([
         ...userlist,
         {
@@ -67,19 +68,21 @@ function Userpage() {
       setUpdateNameMap((prevMap) => ({
         ...prevMap,
         [response.data.insertId]: '',
+        
       }));
+      console.log("hhhhhhhhhh:", userlist)
     });
   };
 
   const readUser = () => {
-    Axios.get("http://localhost:3001/readuser").then((response) => {
+    Axios.get("http://localhost:8001/readuser").then((response) => {
       setUserlist(response.data);
     });
   };
 
   const updateUserName = (userId, newfrontinputname) => {
     if (newfrontinputname !== "") {
-      Axios.put("http://localhost:3001/update", {
+      Axios.put("http://localhost:8001/update", {
         sendtobackname: newfrontinputname,
         Id: userId,
       }).then((response) => {
@@ -103,7 +106,7 @@ function Userpage() {
   };
 
   const deleteUser = (userId) => {
-    Axios.delete(`http://localhost:3001/delete/${userId}`).then((response) => {
+    Axios.delete(`http://localhost:8001/delete/${userId}`).then((response) => {
       setUserlist(
         userlist.filter((val) => {
           return val.user_id !== userId;
@@ -122,6 +125,7 @@ function Userpage() {
   return (
 
     <div className="UserPage">
+      <h1>Userpage</h1>
       <div className="adduser">
         <label>Name:</label>
         <input type="text" onChange={storeName} value={frontinputname} />

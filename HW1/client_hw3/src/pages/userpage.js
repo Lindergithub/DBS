@@ -1,16 +1,3 @@
-
-/*
-import React from 'react';
-function Userpage() {
-    console.log('this is Userpage');
-  return (
-    <div className="Userpage">
-      <h1>Userpage</h1>
-    </div>
-  );
-}
-export default Userpage;
-*/
 import React, { useState, useEffect } from 'react';
 
 import Axios from 'axios';
@@ -50,7 +37,7 @@ function Userpage() {
       alert("電話請輸入數字");
       return;
     }
-    Axios.post("http://localhost:3001/createuser", {
+    Axios.post("http://localhost:2020/createuser", {
       sendtobackname: frontinputname,
       sendtobackgender: frontinputgender,
       sendtobackphone: frontinputphone,
@@ -75,14 +62,14 @@ function Userpage() {
   };
 
   const readUser = () => {
-    Axios.get("http://localhost:3001/readuser").then((response) => {
+    Axios.get("http://localhost:2020/readuser").then((response) => {
       setUserlist(response.data);
     });
   };
 
   const updateUserName = (userId, newfrontinputname) => {
     if (newfrontinputname !== "") {
-      Axios.put("http://localhost:3001/update", {
+      Axios.put("http://localhost:2020/update", {
         sendtobackname: newfrontinputname,
         Id: userId,
       }).then((response) => {
@@ -106,7 +93,7 @@ function Userpage() {
   };
 
   const deleteUser = (userId) => {
-    Axios.delete(`http://localhost:3001/delete/${userId}`).then((response) => {
+    Axios.delete(`http://localhost:2020/delete/${userId}`).then((response) => {
       setUserlist(
         userlist.filter((val) => {
           return val.user_id !== userId;
